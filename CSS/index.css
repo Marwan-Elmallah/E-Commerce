@@ -88,18 +88,19 @@ nav .nav-icons {
 }
 
 .nav-icons span {
-    font-size: 13px;
+    font-size: small;
+    position: relative;
+    left: -16px;
+    top: 4px;
 }
 
-.nav-icons sub {
-    background-color: #0b70a3;
-    width: 20px;
-    display: inline-block;
-    height: 30px;
-    padding: auto;
+.zero {
     font-size: smaller;
+    position: relative;
+    top: -31px;
+    left: -4px;
+    text-shadow: 2px 2px 5px black;
 }
-
 
 .fa-search:hover {
     transform: rotateY(360deg);
@@ -238,6 +239,38 @@ main:hover button {
         top: 59%;
     }
 }
+
+
+/* --------------------------------sponsor--------------------------------- */
+
+/* .sponsor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.sponsor-left {
+    position: fixed;
+    background: url(../imgs/sponsor1.png);
+    width: 9%;
+    height: 65%;
+    top: 20%;
+    left: 5px;
+    z-index: 90;
+}
+
+.sponsor-right {
+    position: fixed;
+    background: url(../imgs/sponsor2.jpeg);
+    width: 9%;
+    height: 65%;
+    top: 20%;
+    right: 5px;
+    z-index: 90;
+} */
+
+/* --------------------------------sponsor--------------------------------- */
+
 
 section h3 {
     font-size: 40px;
@@ -615,5 +648,5 @@ article,
 }
 
 .footer p {
-    color: #f97e38
+    color: #f97e38;
 }
