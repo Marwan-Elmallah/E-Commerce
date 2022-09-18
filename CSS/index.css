@@ -181,7 +181,7 @@ td:hover {
     left: 0%;
     width: 0;
     height: 0;
-    transition: 0.25;
+    transition: 0.25s;
 }
 
 .list li:hover::before {
@@ -201,7 +201,7 @@ main img {
 
 
 main button {
-    padding: 30px;
+    padding: 2%;
     font-size: larger;
     border-radius: 10%;
     position: absolute;
@@ -219,7 +219,7 @@ main button {
 
 main:hover button {
     animation-name: button-move;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     animation-iteration-count: 2;
 }
 
@@ -457,7 +457,7 @@ article,
 
 .icon:hover i {
     animation-name: move;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     animation-fill-mode: both;
 }
 
