@@ -40,9 +40,12 @@ nav {
     background: -webkit-linear-gradient(left, #033249, #065b85, #098fd2);
     background: -moz-linear-gradient(left, #033249, #065b85, #098fd2);
     background: -o-linear-gradient(left, #033249, #065b85, #098fd2);
-    height: 100px;
     width: 100%;
     color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
@@ -54,7 +57,6 @@ li {
 .nav-icons,
 .logo,
 .list {
-    float: left;
     cursor: pointer;
 }
 
@@ -66,25 +68,23 @@ li {
 
 .list {
     list-style: none;
-    margin-left: 200px;
     font-size: 20px;
 }
 
 .list>li {
-    padding: 10px 20px;
     display: inline-block;
-    margin: 25px auto;
     position: relative;
+    padding: 10px;
+    margin: 10px;
 }
 
 nav .nav-icons {
     font-size: 30px;
-    float: right;
-    margin: 30px 80px;
+    margin: 15px;
 }
 
 .nav-icons i {
-    margin-left: 20px;
+    margin: 5px;
 }
 
 .nav-icons span {
@@ -121,7 +121,8 @@ nav .nav-icons {
     text-align: left;
     color: #033249;
     position: absolute;
-    top: 40px;
+    top: 45px;
+    left: 0px;
     background-color: white;
     z-index: 999;
 }
@@ -159,7 +160,7 @@ td:hover {
     left: 0%;
     width: 0;
     height: 0;
-    transition: 0.5s;
+    transition: 0.25s;
 }
 
 .list li:hover:after {
@@ -180,7 +181,7 @@ td:hover {
     left: 0%;
     width: 0;
     height: 0;
-    transition: 0.5;
+    transition: 0.25;
 }
 
 .list li:hover::before {
