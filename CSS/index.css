@@ -33,7 +33,6 @@ main {
 }
 
 section {
-    /* margin-top: 0px; */
     margin-bottom: 25px;
 }
 
@@ -44,9 +43,6 @@ nav {
     height: 100px;
     width: 100%;
     color: white;
-    /* position: fixed; */
-    /* z-index: 90; */
-    /* margin-bottom: 200px; */
 }
 
 
@@ -65,7 +61,6 @@ li {
 .logo {
     width: 100px;
     height: 100px;
-    /* margin-left: 70px; */
 }
 
 
@@ -126,7 +121,7 @@ nav .nav-icons {
     text-align: left;
     color: #033249;
     position: absolute;
-    top: 50px;
+    top: 40px;
     background-color: white;
     z-index: 999;
 }
@@ -164,7 +159,7 @@ td:hover {
     left: 0%;
     width: 0;
     height: 0;
-    transition: 0.25s;
+    transition: 0.5s;
 }
 
 .list li:hover:after {
@@ -173,7 +168,7 @@ td:hover {
     height: 2px;
     left: 0%;
     top: 0px;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .list li::before {
@@ -185,7 +180,7 @@ td:hover {
     left: 0%;
     width: 0;
     height: 0;
-    transition: 0.25;
+    transition: 0.5;
 }
 
 .list li:hover::before {
@@ -194,16 +189,13 @@ td:hover {
     height: 2px;
     left: 0%;
     bottom: 0px;
-    transition: 1s;
+    transition: 0.5s;
 }
-
-main {}
 
 main img {
     width: 100%;
     height: 100%;
     z-index: 1;
-    /* margin-top: 20px; */
 }
 
 
@@ -266,23 +258,9 @@ section h3 {
     }
 }
 
-.container {
-    margin: auto;
-}
-
-.item {
-    display: inline-block;
-    width: 20%;
-    margin: 15px;
-    padding: 15px;
-    border: 1px solid #033249;
-    transition: 1s;
-
-}
-
-.item img {
-    width: 300px;
-    height: 300px;
+.item i {
+    margin-left: 100%;
+    font-size: 20px;
 }
 
 .item .p1 {
@@ -300,9 +278,22 @@ section h3 {
     padding-bottom: 10px;
 }
 
-.item i {
-    margin-left: 100%;
-    font-size: 20px;
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.item {
+    width: 30%;
+    transition: 1s;
+    border: 1px solid #033249;
+    padding: 10px;
+    margin: 15px;
+}
+
+.item img {
+    width: 90%;
 }
 
 .item .arrow {
@@ -312,6 +303,7 @@ section h3 {
     opacity: 0;
     cursor: pointer;
 }
+
 
 .item .arrow i {
     padding: 10px 0px;
@@ -330,6 +322,12 @@ section h3 {
 }
 
 
+.discount {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 article {
     border: 2px dashed #033249;
     width: 40%;
@@ -337,6 +335,7 @@ article {
     padding: 20px;
     text-align: left;
     display: inline-block;
+    overflow: scroll;
 }
 
 .fa-quote-left,
@@ -352,7 +351,6 @@ article i {
 }
 
 .qute {
-    /* padding-left: 60px; */
     font-weight: bolder;
 }
 
@@ -428,9 +426,7 @@ article,
 }
 
 .container-icons .icon {
-    /* background-color: aqua; */
     width: 15%;
-    /* height: 200px; */
     display: inline-block;
     margin: auto;
     padding: auto;
@@ -438,7 +434,6 @@ article,
 
 .border {
     border-right: 1px solid #033249;
-    /* border-left: 1px solid #033249; */
 }
 
 .icon {
@@ -498,7 +493,6 @@ article,
 .product {
     width: 30%;
     overflow: hidden;
-    /* border: 1px solid black; */
     border-radius: 4px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
